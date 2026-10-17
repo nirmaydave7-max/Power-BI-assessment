@@ -1,0 +1,12 @@
+ANS 1-
+Import Mode(default) basically means storing data inside power BI in the memory data remains inside therefore it can be used for historic data for historic sales trend analysis for financial analysis.
+Direct Query fetches fresh data from database or schema therefore each time dashboard or data is refreshed then it shows real time data it can be used for live order status updates by operational team.
+Both the methods has their own trade offs that import mode cannot be used to fetch real time data whereas direct query takes time applying DAX queries and limited chaanges can be done.
+
+ANS 2-
+After importing the data into power BI's power query editor steps to be done are:
+1.FIND AND REPLACE-take one consistent spelling such as "AHMEDABAD" then replace each error spelling with it.
+2.REMOVE BLANK ROWS-from home tab remove blank rows by 'remove blank rows' function.
+3.MERGE COLUMNS-in merge column window select seperator '-' between 2 columns name and phone number.
+
+ANS 3-
