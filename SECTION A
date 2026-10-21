@@ -10,3 +10,18 @@ After importing the data into power BI's power query editor steps to be done are
 3.MERGE COLUMNS-in merge column window select seperator '-' between 2 columns name and phone number.
 
 ANS 3-
+The Orders table is the fact table, while Customers, Restaurants, and DateTable are dimension tables.
+Create one-to-many relationships from each dimension to Orders, this reduces duplication and simplifies DAX calculations.
+
+ANS 4-
+A calculated column computes and stores a value for each row,
+while a measure calculates results dynamically based on filter context.
+Use Total Revenue = SUM(Orders[Revenue]) for the KPI card so it responds to the City slicer.
+
+ANS 5-
+Two possible causes are a DAX measure using ALL() or REMOVEFILTERS(), or a disabled visual interaction/incorrect relationship.
+Check the measure, Edit interactions, and Model view to identify the cause.
+
+ANS 6-
+In Modeling → Manage roles, create roles with filters such as [City] = "Ahmedabad" and [City] = "Surat".
+Test using View as, publish the report, then assign users to their respective roles under Power BI Service → Semantic model → Security.
