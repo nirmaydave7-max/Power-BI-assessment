@@ -1,0 +1,14 @@
+PROMPT:
+
+Help me create a Month-over-Month (MoM) Revenue Growth Percentage measure in Power BI using my FoodRush dataset.
+
+1. Create a Total Revenue measure using the Orders table.
+2. Create a Previous Month Revenue measure using PREVIOUSMONTH().
+3. Create an MoM Revenue Growth % measure using DIVIDE() to handle blank or zero previous-month revenue safely.
+4. Explain how to format the measure as a percentage and display it in a Card or Line Chart.
+5. Verify that the DateTable has a continuous date range, is marked as a Date table, and has an active relationship with Orders[OrderDate].
+6. Help troubleshoot blank cards, considering missing previous-month data, date relationships, data types, and report filters.
+
+MISTAKE:
+The cards were blank because Power BI could not find valid previous-month revenue in the current date context,
+potentially due to missing prior-month data or date relationship issues. The problem was resolved by checking the date setup and ensuring previous-month revenue was available.
